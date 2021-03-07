@@ -1,0 +1,15 @@
+{
+    "name": "aruppaul/phpmvcframework",
+    "authors": [
+        {
+            "name": "Arup paul",
+            "email": "aruppaulctg@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "app\\": "./"
+        }
+    },
+    "require": {}
+}
