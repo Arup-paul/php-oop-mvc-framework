@@ -6,4 +6,6 @@
  
  
 ###  pacakge install
- composer require vlucas/phpdotenv
+```bash
+$ composer require vlucas/phpdotenv
+```
