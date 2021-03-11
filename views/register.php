@@ -1,35 +1,20 @@
 <h1 class="text-center">Create an Account</h1>
 
-
-<form action="" method="post">
-    <div class="row">
-        <div class="form-group col-6 ">
-            <label for="name">First Name</label>
-            <input type="text" name="firstname" class="form-control" placeholder="Enter your First Name">
-        </div>
-        <div class="form-group col-6 ">
-            <label for="name">Last Name</label>
-            <input type="text" name="lastname" class="form-control" placeholder="Enter your Last Name">
-        </div>
-
-    </div>
-    <div class="form-group   ">
-        <label for="email">Email Address</label>
-        <input type="email" name="email" class="form-control" placeholder="Enter your email">
-    </div>
-
-    <div class="form-group   ">
-        <label for="password">Password</label>
-        <input type="password" name="password" class="form-control" placeholder="Enter your password">
-    </div>
+<?php $form =  \app\core\form\Form::begin('','post') ?>
+   <div class="row">
+       <div class="col">
+           <?php echo $form->field($model, 'firstname') ?>
+       </div>
+       <div class="col">
+           <?php echo $form->field($model, 'lastname') ?>
+       </div>
+   </div>
 
 
-    <div class="form-group   ">
-        <label for="password">Confirm Password</label>
-        <input type="password" name="passwordConfirm" class="form-control" placeholder=" Confirm password">
-    </div>
-    <br>
-    <button type="submit" class="btn btn-primary">Register</button>
+   <?php echo $form->field($model, 'email') ?>
+   <?php echo $form->field($model, 'password')->passwordField() ?>
+   <?php echo $form->field($model, 'confirmPassword')->passwordField() ?>
+   <button type="submit" class="btn btn-primary">Register</button>
+<?php echo \app\core\form\Form::end() ?>
 
 
-</form>

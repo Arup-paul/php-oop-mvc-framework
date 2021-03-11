@@ -12,6 +12,7 @@ class Application
     public Controller $controller;
    public function __construct($rootPath)
    {
+
        self::$ROOT_DIR = $rootPath;
        self::$app = $this;
        $this->request = new Request();

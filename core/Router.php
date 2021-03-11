@@ -30,13 +30,14 @@ class Router
     public function resolve(){
         $path = $this->request->getPath();
         $method = $this->request->method();
-
         $callback = $this->routes[$method][$path] ?? false;
+
         if($callback === false){
            $this->response->setStatusCode(404);
            return $this->renderView("_404");
         }
         if(is_string($callback)){
+
            return $this->renderView($callback);
         }
         if(is_array($callback)){
