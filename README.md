@@ -5,5 +5,5 @@
  - composer update
  
  
-###pacakge install
+###  pacakge install
  composer require vlucas/phpdotenv
