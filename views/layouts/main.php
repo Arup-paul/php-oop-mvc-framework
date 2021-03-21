@@ -43,9 +43,12 @@ use app\core\Application;
             </ul>
             <?php else: ?>
             <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="/profile">Profile</a>
+                </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="/logout">Welcom <?php echo Application::$app->user->getDisplayName() ?> (Logout)</a>
+                    <a class="nav-link" href="/logout">Welcome <?php echo Application::$app->user->getDisplayName() ?> (Logout)</a>
                 </li>
             </ul>
             <?php endif; ?>
