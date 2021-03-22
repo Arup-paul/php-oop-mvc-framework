@@ -1,5 +1,10 @@
 <?php
 /**  @var  $model \app\Models\User */
+
+
+$this->title = 'Login';
+
+
 ?>
 
 <h1 class="text-center">Login</h1>

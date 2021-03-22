@@ -1,5 +1,8 @@
 <?php
  /**  @var  $model \app\Models\User */
+
+$this->title = 'Register';
+
 ?>
 
 <h1 class="text-center">Create an Account</h1>
